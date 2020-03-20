@@ -1,0 +1,57 @@
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'blocks/container.scss';
+@import 'base.scss';
+@import 'blocks/small-blocks.scss';
+@import 'blocks/header-page.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/new-collection.scss';
+@import 'blocks/bestsellers.scss';
+@import 'blocks/street-collection.scss';
+@import 'blocks/category.scss';
+@import 'blocks/page-footer.scss';
+
+// @import 'blocks/contacts.scss';
+// @import 'blocks/footer.scss';
+// @import 'blocks/line-separator.scss';
+
+
+// @media (min-width: $tabel-width) {
+//
+// }
+//
+// @media (min-width: $desktop-width) {
+//
+// }
+//
+// @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//   background-image: url('');
+// }
+
+// <picture class="bestsellers__image">
+//   <source
+//   type="image/webp"
+//   media="(min-width: 769px)"
+//   srcset="img/WebP/best-jacket-1-desctop.webp">
+//
+//   <source
+//   media="(min-width: 769px)"
+//   srcset="img/best-jacket-1-desctop.jpg" >
+//
+//   <source
+//   type="image/webp"
+//   media="(min-width: 321px)"
+//   srcset="img/WebP/best-jacket-1-tablet.webp">
+//
+//   <source
+//   media="(min-width: 321px)"
+//   srcset="img/best-jacket-1-tablet.jpg" >
+//
+//   <source
+//   type="image/webp"
+//   srcset="img/WebP/best-jacket-1.webp">
+//
+//   <img src="img/best-jacket-1.jpg" alt="жакет">
+// </picture>

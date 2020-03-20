@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content ="denim jeans shop">
+    <title>Denim</title>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="container product_card">
+
+    <div style="display:none">
+     <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="header-page">
+      <nav class="main-nav">
+        <a href="#" class="main-nav__toggle">
+          <span class="visually-hidden">toggle menu</span>
+        </a>
+        <a href="index.html" class="main-nav__logo">
+          <img src="img/SVG-Nimes.svg" width="75"height="17" alt="Nimes" class="main-nav__img">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Woman
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Man
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              New
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__item--cart">
+            <a href="#" class="main-nav__link">
+              <span class="visually-hidden">cart</span>
+              <svg class="main-nav__link-icon" width="20" height="18">
+                <use xlink:href="#SVG-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-nav__item--search">
+            <a href="#" class="main-nav__link">
+              <span class="visually-hidden">search</span>
+              <svg class="main-nav__link-icon" width="18" height="18">
+                <use xlink:href="#SVG-search"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product">
+        <div class="product__gallery">
+          <button class="product__previous"></button>
+          <picture class="product__image">
+            <source
+            type="image/webp"
+            srcset="img/WebP/product__card/product__image-mobile.webp">
+            <img src="img/product__card/product__image-mobile.jpg" alt="Overalls">
+          </picture>
+          <button class="product__next"></button>
+        </div>
+        <div class="product__info"></div>
+      </section>
+
+    </main>
+
+    <!-- <footer class="page-footer">
+
+    </footer> -->
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>

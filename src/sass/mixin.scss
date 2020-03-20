@@ -1,0 +1,41 @@
+@mixin hov {
+  &:hover,:focus {
+    opacity: 0.4;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin reset-indent {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+}
+
+@mixin outline {
+  outline: 3px solid green;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
