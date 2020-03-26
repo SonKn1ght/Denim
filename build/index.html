@@ -39,7 +39,7 @@
           <li class="main-nav__item--cart">
             <a href="#" class="main-nav__link">
               <span class="visually-hidden">cart</span>
-              <svg class="main-nav__link-icon" alt="cart" width="20" height="18">
+              <svg class="main-nav__link-icon" width="20" height="18">
                 <use xlink:href="#SVG-cart"></use>
               </svg>
             </a>
@@ -47,7 +47,7 @@
           <li class="main-nav__item--search">
             <a href="#" class="main-nav__link">
               <span class="visually-hidden">search</span>
-              <svg class="main-nav__link-icon" alt="search" width="18" height="18">
+              <svg class="main-nav__link-icon" width="18" height="18">
                 <use xlink:href="#SVG-search"></use>
               </svg>
             </a>
@@ -60,41 +60,43 @@
 
     <main>
       <section class="new-collection">
-        <div class="new-collection__inner-wrapper">
-          <div class="new-collection__model-wrapper">
-            <picture class="new-collection__model">
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/WebP/first-model-1366.webp">
-              <source media="(min-width: 1366px)" srcset="img/first-model-1366.jpg">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/WebP/first-model-768.webp">
-              <source media="(min-width: 768px)" srcset="img/first-model-768.jpg">
-              <source type="image/webp" srcset="img/WebP/first-model.webp">
-              <img src="img/first-model.jpg" alt="Nimes">
-            </picture>
+        <div class="new-collection__bg-wrapper">
+          <div class="new-collection__inner-wrapper">
+            <div class="new-collection__model-wrapper">
+              <picture class="new-collection__model">
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/WebP/first-model-1366.webp">
+                <source media="(min-width: 1366px)" srcset="img/first-model-1366.jpg">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/WebP/first-model-768.webp">
+                <source media="(min-width: 768px)" srcset="img/first-model-768.jpg">
+                <source type="image/webp" srcset="img/WebP/first-model.webp">
+                <img src="img/first-model.jpg" alt="Nimes">
+              </picture>
+            </div>
+            <div class="new-collection__description-wrapper">
+              <p class="new-collection__tagline">The quality you deserve</p>
+              <h1 class="new-collection__title">
+              <svg class="new-collection__title-img" width="205" height="75">
+                <use xlink:href="#SVG-DENIM"></use>
+              </svg>
+                <span class="visually-hidden">DENIM</span>
+              </h1>
+              <a href="#" class="new-collection__button button">Check new collection</a>
+            </div>
           </div>
-          <div class="new-collection__description-wrapper">
-            <p class="new-collection__tagline">The quality you deserve</p>
-            <h1 class="new-collection__title">
-            <svg class="new-collection__title-img" alt="DENIM" width="205" height="75">
-              <use xlink:href="#SVG-DENIM"></use>
-            </svg>
-              <span class="visually-hidden">DENIM</span>
-            </h1>
-            <a href="#" class="new-collection__button button">Check new collection</a>
-          </div>
+          <a href="#" class="new-collection__link">
+              <svg class="new-collection__link-img" width="10" height="27">
+                <use xlink:href="#SVG-arrow"></use>
+              </svg>
+          </a>
+          <ul class="new-collection__social">
+              <li class="new-collection__social-item">
+                <a href="#" class="new-collection__social-link">Instagram</a>
+              </li>
+              <li class="new-collection__social-item">
+                <a href="#" class="new-collection__social-link">Facebook</a>
+              </li>
+            </ul>
         </div>
-        <a href="#" class="new-collection__link">
-            <svg class="new-collection__link-img" alt="Go to new collection" width="10" height="27">
-              <use xlink:href="#SVG-arrow"></use>
-            </svg>
-        </a>
-        <ul class="new-collection__social">
-            <li class="new-collection__social-item">
-              <a href="#" class="new-collection__social-link">Instagram</a>
-            </li>
-            <li class="new-collection__social-item">
-              <a href="#" class="new-collection__social-link">Facebook</a>
-            </li>
-          </ul>
 
       </section>
 
@@ -251,7 +253,7 @@
       <h2 class="page-footer__tittle">
         <a href="#" class="page-footer__tittle-link">
           <span class="visually-hidden">Nimes</span>
-          <svg class="page-footer__logo" alt="Nimes" width="73" height="19">
+          <svg class="page-footer__logo" width="73" height="19">
             <use xlink:href="#SVG-Nimes"></use>
           </svg>
         </a>
@@ -287,7 +289,7 @@
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link">
             <span class="visually-hidden">facebook </span>
-            <svg class="page-footer__facebook" alt="facebook" width="11" height="20">
+            <svg class="page-footer__facebook" width="11" height="20">
               <use xlink:href="#SVG-facebook"></use>
             </svg>
           </a>
@@ -295,7 +297,7 @@
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link">
             <span class="visually-hidden">instagram</span>
-            <svg class="page-footer__instagram" alt="instagram" width="20" height="20">
+            <svg class="page-footer__instagram" width="20" height="20">
               <use xlink:href="#SVG-inst"></use>
             </svg>
           </a>
@@ -303,7 +305,7 @@
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link">
             <span class="visually-hidden">pinterest</span>
-            <svg class="page-footer__pin" alt="pinterest" width="20" height="20">
+            <svg class="page-footer__pin" width="20" height="20">
               <use xlink:href="#SVG-pin"></use>
             </svg>
           </a>
@@ -311,7 +313,7 @@
         <li class="page-footer__social-item">
           <a href="#" class="page-footer__social-link">
             <span class="visually-hidden">twitter</span>
-            <svg class="page-footer__twitter" alt="twitter" width="20" height="17">
+            <svg class="page-footer__twitter" width="20" height="17">
               <use xlink:href="#SVG-twitter"></use>
             </svg>
           </a>
@@ -319,7 +321,7 @@
       </ul>
     </footer>
     <script src="js/picturefill.min.js"></script>
-    <!-- <script src="js/script.js" charset="utf-8"></script> -->
+    <!-- <script src="js/script.js"></script> -->
 
 
 

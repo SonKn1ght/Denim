@@ -13,14 +13,7 @@
   color: $blackish-blue;
   border-bottom: 2px solid $blackish-blue;
 
-  &:hover,:focus {
-    color: $gray-squirrel;
-    border-bottom: 2px solid $gray-squirrel;
-  }
-  &:active {
-    color: $grey;
-    border-bottom: 2px solid $grey;
-  }
+  @include hov;
 }
 
 @media (min-width: $tabel-width) {

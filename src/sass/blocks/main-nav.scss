@@ -7,6 +7,7 @@
   .product_card & {
     justify-content: space-between;
     padding: 25px 15px 0;
+    margin: 0 0 35px 0;
   }
 }
 
@@ -47,7 +48,7 @@
 
   .product_card & {
     width: 75px;
-
+    margin: 0px 48px 0 86px;
   }
 }
 
@@ -92,13 +93,12 @@
   font-size: 16px;
   line-height: 19px;
 
-  &:hover,:focus {
-    opacity: 0.4;
-  }
+  // @include hov;
 }
 
 .main-nav__link {
   @include reset-link;
+  @include hov;
   color: $black;
 }
 
@@ -124,6 +124,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  stroke: $black;
 
   .product_card & {
     width: 61px;
@@ -157,6 +158,7 @@
 
     .product_card & {
       padding: 25px 45px;
+      margin: 0 auto 30px;
     }
 
   }
@@ -237,6 +239,7 @@
   .main-nav {
     .product_card & {
       padding: 25px 98px;
+      margin: 0 auto 25px;
     }
   }
 

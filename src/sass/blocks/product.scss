@@ -1,0 +1,432 @@
+.product {
+  margin: 0 0 50px 0;
+}
+
+.product__container {
+  width: 244px;
+  margin: 0 auto 40px;
+}
+
+.product__arrow {
+  position: relative;
+}
+
+.glide__slides {
+  margin: 0;
+}
+
+.glide__slide img {
+  display: block;
+}
+
+.product__arrow {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.product__arrow  {
+  fill: $white;
+  stroke: $black;
+
+  :active {
+     position: relative;
+     top: 2px;
+  }
+
+  &:hover,
+  &:focus {
+   stroke: $gray-squirrel;
+  }
+}
+
+.product__arrow-prev {
+  position: absolute;
+  top: 130px;
+  left: -25px;
+}
+
+.product__arrow-next {
+  position: absolute;
+  top: 130px;
+  left: 257px;
+}
+
+.product__arrow-next svg {
+  transform: scale(-1, 1);
+}
+
+.product__slides-preview {
+  display: none;
+}
+
+.product__info {
+  width: 100%;
+  background-color: $grey;
+  padding: 35px 9.37% 40px 4.69%;
+}
+
+.product__title {
+  margin: 0 0 20px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.product__description {
+  margin: 0 0 25px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.product__form {
+
+}
+
+.product__form-fields {
+  padding: 0 0px;
+  margin: 0 0 0 0;
+  border: none;
+}
+
+.product__form-title {
+  display: block;
+  width: 42px;
+  margin: 0 0 25px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.product__form-colors {
+  @include reset-list;
+  display: flex;
+  margin: 0 0 30px 0;
+}
+
+.product__form-color {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px 0 0;
+}
+
+.product__form-color-radio:checked+.product__form-color-label {
+  box-shadow: 0 0 0 2px currentColor;
+}
+
+.product__form-color-label {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0px 0 20px 0;
+  border: solid 2px $white;
+  border-radius: 50%;
+  @include hov;
+}
+
+.product__form-color-label[for=graycyan] {
+  color: $graycyan;
+  background-color: $graycyan;
+}
+
+.product__form-color-label[for=darkblue] {
+  color: $darkblue;
+  background-color: $darkblue;
+}
+
+.product__form-color-label[for=grayblue] {
+  color: $grayblue;
+  background-color: $grayblue;
+}
+
+.product__form-sizes {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  width: 167px;
+  margin: -7px 0 25px 0;
+}
+
+.product__form-size {
+
+}
+
+
+.product__form-size-radio:checked+.product__form-size-label {
+  color: $black;
+}
+
+.product__form-size-label {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $gray-squirrel;
+  @include hov;
+}
+
+.product__price {
+  margin: 0 0 30px 0;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.product__button {
+  padding: 24px 55px;
+  margin: 0 0 0 0;
+  @include hov;
+}
+
+@media (min-width: $tabel-width) {
+
+  .product {
+    display: flex;
+    padding: 0 0 0 0;
+    margin: 0 0 93px 0;
+  }
+
+  .product__container {
+    width: 324px;
+    height: auto;
+    margin: 0 15px 0 auto;
+    padding: 0 0 0 0;
+  }
+
+  .product__main-slide {
+    margin: 0 0 22px 0;
+  }
+
+  .product__arrow {
+    display: none;
+
+  }
+
+  .product__arrow-prev {
+
+  }
+
+  .product__arrow-next {
+
+  }
+
+  .product__info {
+    width: calc(50% - 15px);
+    margin: 0 0 0 15px;
+    padding: 45px 44px 50px 50px;
+  }
+
+  .product__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0 0 30px 0;
+  }
+
+  .product__description {
+    width: 310px;
+    margin: 0 0 40px 0;
+  }
+
+  .product__form {
+
+  }
+
+  .product__form-fields {
+
+  }
+
+  .product__form-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .product__form-colors {
+    margin: 0 0 35px 0;
+  }
+
+  .product__form-color {
+    margin: 0 25px 0 0;
+  }
+
+  .product__form-color-radio {
+
+  }
+
+  .product__form-color-label {
+
+  }
+
+  .product__form-sizes {
+    width: 165px;
+    margin: -7px 0 30px;
+  }
+
+  .product__form-size {
+
+  }
+
+  .product__form-size-radio {
+
+  }
+
+  .product__form-size-label {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .product__price {
+    margin: 0 0 45px;
+  }
+
+  .product__button {
+
+  }
+
+  .product__slides-preview {
+    display: flex;
+    height: 220px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .product__slides-preview button {
+    border: none;
+    padding: 0;
+    background-color: $white;
+  }
+
+  .product__slides-preview img {
+    display: block;
+  }
+
+  .product__slide-preview {
+    @include hovImg;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .product {
+    margin: 0 0 120px 0;
+  }
+
+  .product__container {
+    width: 400px;
+    margin: 0 115px 0 auto;
+  }
+
+  .product__main-slide {
+    width: 400px;
+  }
+
+  .product__arrow {
+    display: block;
+  }
+
+  .product__arrow svg {
+    width: 15px;
+    height: 26px;
+  }
+
+  .product__arrow-prev {
+    top: 190px;
+    left: -70px;
+  }
+
+  .product__arrow-next {
+    top: 190px;
+    left: 457px;
+  }
+
+  .product__slides-preview {
+    height: 113px;
+  }
+
+  .product__slide-preview {
+
+  }
+
+  .product__info {
+    padding: 60px 0 0 70px;
+  }
+
+  .product__title {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0 0 30px 0;
+  }
+
+  .product__description {
+    width: 370px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .product__form {
+
+  }
+
+  .product__form-fields {
+
+  }
+
+  .product__form-title {
+
+  }
+
+  .product__form-colors {
+
+  }
+
+  .product__form-color {
+
+  }
+
+  .product__form-color-radio {
+
+  }
+
+  .product__form-color-label {
+
+  }
+
+  .product__form-sizes {
+
+  }
+
+  .product__form-size {
+
+  }
+
+  .product__form-size-radio {
+
+  }
+
+  .product__form-size-label {
+
+  }
+
+  .product__price {
+
+  }
+
+  .product__button {
+
+  }
+}

@@ -1,9 +1,39 @@
 @mixin hov {
-  &:hover,:focus {
+  &:hover,
+  &:focus {
+    outline: none;
     opacity: 0.4;
   }
+
   &:active {
     opacity: 0.7;
+  }
+}
+
+@mixin hovImg {
+  &:hover,
+  &:focus {
+    outline: none;
+
+    img {
+      box-shadow: 2px 2px 2px $gray-squirrel;
+      transform: translate(-2px, -2px);
+    }
+
+    * {
+      color: $gray-squirrel;
+    }
+  }
+
+  &:active {
+    img {
+      box-shadow: none;
+      transform: translate(0, 0);
+    }
+
+    * {
+      color: $very-gray-squirrel;
+    }
   }
 }
 

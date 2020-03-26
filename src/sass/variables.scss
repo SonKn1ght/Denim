@@ -2,8 +2,17 @@ $white: #ffffff;
 $black: #000000;
 $grey: #f1f2f4;
 $gray-squirrel: #727A82;
+$very-gray-squirrel: #B0B9BF;
 $blackish-blue: #151C22;
+$graycyan: #B0C3C7;
+$darkblue: #3B6392;
+$grayblue :#BFC3C8;
 $mobile-tabel-width: 425px;
 $tabel-width: 768px;
 $desktop-width: 1366px;
 $only-mobile: 767px;
+
+// glide
+$glide-class: 'glide' !default;
+$glide-element-separator: '__' !default;
+$glide-modifier-separator: '--' !default;
